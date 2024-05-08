@@ -6,15 +6,21 @@
 
 //Example 1:
 //INPUT
-let nums = [1, 2, 3, 4]
-let fn = function sum(accum, curr) { return accum + curr; }
-let init = 0
+let nums = [];
+let fn = function sum(accum, curr) { return 0; }
+let init = 25;
 
 var reduce = function (nums, fn, init) {
     for (let i = 0; i < nums.length; i++) {
-        init += nums[i];
+        if (nums.length > 0) {
+            init = fn(init, nums[i]);
+        }
     }
+    return init;
 };
+
+console.log(reduce(nums, fn, init));
+
 /* Output: 10
 Explanation:
 initially, the value is init=0.
