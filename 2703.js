@@ -1,11 +1,9 @@
 /* 2703. Return Length of Arguments Passed */
 /* Write a function argumentsLength that returns the count of arguments passed to it. */
 
-var argumentsLength = function (...args) {
+var argumentsLength = (...args) => args.length;
 
-};
-
-argumentsLength(1, 2, 3)
+console.log(argumentsLength(5))
 
 /**
  * argumentsLength(1, 2, 3); // 3
