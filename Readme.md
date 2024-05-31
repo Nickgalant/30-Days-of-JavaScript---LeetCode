@@ -8,6 +8,7 @@
 * 2629 Function Composition
 * 2626 Array Reduce Transformation
 * 2703 Return Length of Arguments Passed
+* 2666 Allow One Function Call
 ## Reference
 
  - [Leet Code - 30 Days of JavaScript](https://leetcode.com/studyplan/30-days-of-javascript/)
